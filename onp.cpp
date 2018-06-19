@@ -15,7 +15,7 @@ int main(){
 	if (plik.is_open()){        //instrukcja warunkowa, wykonuje kod jesli nie bylo problemu z otwarciem pliku
 	plik>>z;		//zaimportowanie pierwszego elementu z pierwszej lini pliku do zmiennej pomocniczej z
 	int tab[z];		//utworzenie tabeli o wielkosci podanej w pliku num.txt 
-	for(int i;i<z;i++){  //zapelnienie dablicy numerami miast od 1 do z.
+	for(int i=0;i<z;i++){  //zapelnienie dablicy numerami miast od 1 do z.
 		tab[i]=i+1;
 	}
 	
@@ -29,7 +29,7 @@ int main(){
 	}
 	}
 	
-	for(int i; i<(sizeof((arr))/sizeof((arr[0])));i++){ 	//drukowanie zawartosci tablicy, sizeof(arr) zwraca ilosc elementow tablicy w bitach, trzeba podzielic przez pojedynczy element sizeof(arr[0]), wtedy otrzymamy ilosc elementow
+	for(int i=0; i<(sizeof((arr))/sizeof((arr[0])));i++){ 	//drukowanie zawartosci tablicy, sizeof(arr) zwraca ilosc elementow tablicy w bitach, trzeba podzielic przez pojedynczy element sizeof(arr[0]), wtedy otrzymamy ilosc elementow
 		cout<<" "<<arr[i];
 	}
 	cout<<"\n\n\n";
