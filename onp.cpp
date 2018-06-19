@@ -1,17 +1,18 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
 
 int arr[25]; //tablica na dane odleglosci miast
-
+int y=0; //zmienna pomocnicza
 
 int main(){
 	int z; //zmienna pomocnicza
-	int y=0; //zmienna pomocnicza
+	
 	ifstream plik("num.txt"); //uzywamy konstruktora bibliotecznego ifstream do utworzenia obieku zawierajacego nasz plik (w katalogu gdzie wykonuje sie program)
-	if (myfile.is_open()){        //instrukcja warunkowa, wykonuje kod jesli nie bylo problemu z otwarciem pliku
+	if (plik.is_open()){        //instrukcja warunkowa, wykonuje kod jesli nie bylo problemu z otwarciem pliku
 	plik>>z;		//zaimportowanie pierwszego elementu z pierwszej lini pliku do zmiennej pomocniczej z
 	int tab[z];		//utworzenie tabeli o wielkosci podanej w pliku num.txt 
 	for(int i;i<z;i++){  //zapelnienie dablicy numerami miast od 1 do z.
