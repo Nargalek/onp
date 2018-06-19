@@ -16,7 +16,7 @@ int main(){
 	plik>>z;		//zaimportowanie pierwszego elementu z pierwszej lini pliku do zmiennej pomocniczej z
 	int tab[z];		//utworzenie tabeli o wielkosci podanej w pliku num.txt 
 	for(int i;i<z;i++){  //zapelnienie dablicy numerami miast od 1 do z.
-		tab[i]=z+1;
+		tab[i]=i+1;
 	}
 	
 	while (true)			//petla do wczytania reszty danych
